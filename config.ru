@@ -1,5 +1,5 @@
 require "rack/jekyll"
-require "rack/auth"
+require "rack"
 
 use Rack::Auth::Basic, "Restricted Area" do |username, password|
   [username, password] = ['foo', 'bar']
